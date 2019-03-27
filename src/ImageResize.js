@@ -88,7 +88,7 @@ export default class ImageResize {
     handleClick = (evt) => {
         // read-only callback
         if (this.quill.root.getAttribute('contenteditable') === 'false') {
-            this.options.readOnlyCallback(this.img);
+            this.options.readOnlyCallback(evt.target);
             return;
         }
 
