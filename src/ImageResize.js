@@ -89,7 +89,6 @@ export default class ImageResize {
         if (evt.target && evt.target.tagName && evt.target.tagName.toUpperCase() === 'IMG') {
             // read-only callback
             if (this.quill.root.getAttribute('contenteditable') === 'false') {
-                this.hide();
                 this.options.readOnlyCallback(evt.target);
                 return;
             }
